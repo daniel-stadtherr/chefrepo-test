@@ -15,5 +15,6 @@ magic_shell_alias 'sites' do
 command "cd #{node['apache']['dir']}/sites-enabled"
 end
 # Set Nano as the default editor
-magic_shell_environment 'EDITOR' dovalue 'nano'
+magic_shell_environment 'EDITOR' do
+value 'nano'
 end
