@@ -9,3 +9,4 @@ validation_client_name   "dcs-test-kitchen-validator"
 validation_key           "#{current_dir}/dcs-test-kitchen-validator.pem"
 chef_server_url          "https://api.chef.io/organizations/dcs-test-kitchen"
 cookbook_path            ["#{current_dir}/../cookbooks"]
+knife[:editor] = "/usr/bin/vim"
